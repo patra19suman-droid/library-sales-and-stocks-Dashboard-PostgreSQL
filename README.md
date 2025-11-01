@@ -51,7 +51,7 @@ The database consists of three main tables:
     * **Important:** You must modify the `COPY` command's `FROM` path to match the location of your CSV files on your local machine.
     ```sql
     COPY Books(Book_ID, Title, Author, Genre, Published_Year, Price, Stock)
-    FROM 'YOUR_LOCAL_FILE_PATH\Books.csv' -- <-- CHANGE THIS PATH
+    FROM 'c\Books.csv' 
     DELIMITER ','
     CSV HEADER;
 
